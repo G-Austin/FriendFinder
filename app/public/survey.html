@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Page</title>
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="text-center"><span class="glyphicon glyphicon-fire"></span> Friend Finder</h1>
+      <hr>
+      <h2 class="text-center">Answer the following questions to get matched with your new best friend!</h2>
+      <br>
+      <!-- <div class="text-center">
+        <a href="/friends"><button type="button" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-list-alt"></span> View All Potential Friends</button></a>
+        <a href="/"><button type="button" class="btn btn-lg btn-default"><span class="glyphicon glyphicon-home"></span></button></a>
+      </div> -->
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <!-- Reservation Page -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">Survey</h4>
+          </div>
+          <div class="panel-body">
+            <form role="form">
+              <div class="form-group">
+                <label for="reserve-name">Name</label>
+                <input type="text" class="form-control" id="reserve-name">
+              </div>
+              <div class="form-group">
+                <label for="q1">How much do you like to read?</label>
+                <input type="text" class="form-control" id="q1">
+              </div>
+              <div class="form-group">
+                <label for="q2">How much do you like being outside?</label>
+                <input type="text" class="form-control" id="q2">
+              </div>
+              <div class="form-group">
+                <label for="q3">How much do you dislike Donald Trump?</label>
+                <input type="text" class="form-control" id="q3">
+              </div>
+              <div class="form-group">
+                <label for="q4">How much do you dislike the outdoors?</label>
+                <input type="text" class="form-control" id="q4">
+              </div>
+              <div class="form-group">
+                <label for="q5">How much do you like to sleep?</label>
+                <input type="text" class="form-control" id="q5">
+              </div>
+              <div class="form-group">
+                <label for="q6">Do you like being alone?</label>
+                <input type="text" class="form-control" id="q6">
+              </div>
+              <div class="form-group">
+                <label for="q7">Do you like beer?</label>
+                <input type="text" class="form-control" id="q7">
+              </div>
+              <div class="form-group">
+                <label for="q8">Do you like wine?</label>
+                <input type="text" class="form-control" id="q8">
+              </div>
+              <div class="form-group">
+                <label for="q9">Do you like kareoke</label>
+                <input type="text" class="form-control" id="q9">
+              </div>
+              <div class="form-group">
+                <label for="q10">Do you wish you had a better job?</label>
+                <input type="text" class="form-control" id="q10">
+              </div>
+              <button type="submit" class="btn btn-primary submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <p><a href="/api/friends">API Table Link</a> | <a href="/api/friends">API Friend List</a> | <a href="https://github.com/afhaque/HotRestaurant">GitHub Repo</a></p>
+      </div>
+    </footer>
+  </div>
+
+</body>
+</html>
