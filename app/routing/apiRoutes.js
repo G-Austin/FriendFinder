@@ -39,7 +39,17 @@ module.exports = function(app) {
         difference += Math.abs(friends[i].scores[j] - userScores[j]);
       }
       console.log('difference = ', difference);
+      //set lowest difference to comparison, store friend and photo
+      if (difference < comparison) {
+        comparison = difference;
+        matchName = friends[i].name;
+        matchImage = friends[i].photo;
+      }
     }
+    //Add new users
+    friends.push(userData)
+    //send response
+    res.json({name: matchName, photo: matchImage})
   });
 
 
